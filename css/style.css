@@ -1,0 +1,1251 @@
+@charset "utf-8";
+
+/* 폰트 */
+@font-face {
+    font-family:'poppi-b';
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'pret-r';
+    src: url(../fonts/Pretendard/Pretendard-Regular.otf);
+}
+@font-face {
+    font-family: 'pret-b';
+    src: url(../fonts/Pretendard/Pretendard-Bold.otf);
+}
+@font-face {
+    font-family: 'pret-sb';
+    src: url(../fonts/Pretendard/Pretendard-SemiBold.otf);
+}
+@font-face {
+    font-family: 'pret-l';
+    src: url(../fonts/Pretendard/Pretendard-Light.otf);
+}
+@font-face {
+    font-family: 'pret-m';
+    src: url(../fonts/Pretendard/Pretendard-Medium.otf);
+}
+@font-face {
+    font-family: 'free-r';
+    src: url(../fonts/Freesentation/Freesentation-4Regular.ttf);
+}
+@font-face {
+    font-family: 'free-sb';
+    src: url(../fonts/Freesentation/Freesentation-6SemiBold.ttf);
+}
+@font-face {
+    font-family: 'serif-r';
+    src: url(../fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: 'serif-I';
+    src: url(../fonts/DM_Serif_Display/DMSerifDisplay-Italic.ttf);
+}
+@font-face {
+    font-family: 'serif-sb';
+    src: url(../fonts/DM_Serif_Display/);
+}
+@font-face {
+    font-family: 'ws-r';
+    src: url(../fonts/Work_Sans/WorkSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'ws-b';
+    src: url(../fonts/Work_Sans/WorkSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'nns-r';
+    src: url(../fonts/nanum-square/NanumSquareR.ttf);
+}
+@font-face {
+    font-family: 'pf-sb';
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-SemiBold.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(../images/Normal.cur) 2 2, auto;
+}
+*:active {
+    cursor: url(../images/Select.cur) 2 2, auto;
+}
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* 1페이지 - 메인배너 및 인트로 */
+.mainbanner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+}
+.maintext {
+    padding: 5rem;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.main {
+    width: 100%;
+    position: relative;
+}
+.main h1 {
+    font-family: poppins;
+    font-size: 13rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #fff;
+    padding: 0;
+}
+.me1 {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.LJA1 {
+    font-family: pret-b;
+    font-size: 30px;
+    text-align: left;
+}
+.grow {
+    font-family: pret-r;
+    font-size: 21px;
+    color: #fff;
+    background-color: #000;
+    text-align: right;
+    padding: 1rem;
+    border-radius: 50px;
+}
+.warm {
+    font-family: pret-r;
+    font-size: 24px;
+    text-align: left;
+    line-height: 1.5;
+}
+.born {
+    font-family: pret-sb;
+    font-size: 20px;
+    text-align: right;
+    padding: 10px;
+}
+
+
+/* 2페이지 - 내 소개 */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+}
+.intro-left {
+    width: 40%;
+}
+.intro-right {
+    width: 60%;
+}
+.me-container {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+}
+.LJA2 {
+    font-family: serif-r;
+    font-size: 4rem;
+    color: #5a1a1a;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+.creator {
+    font-family: free-m;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    text-align: center;
+    padding-top: 1%;
+}
+.me2 {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.info-group {
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content;
+}
+.info-group li {
+    font-size: 1.2rem;    
+    font-family: pret-m;
+    color: #333;
+    line-height: 2.2;
+    text-align: left;
+}
+.label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    width: 80px;
+    display: inline-block;
+}
+.daily {
+    font-family: free-sb;
+    font-size: 41px;
+    text-align: right;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0 auto;
+}
+.JINA {
+    color: #822525;
+}
+.challenge {
+    font-family: free-r;
+    font-size: 34px;
+    text-align: right;
+    line-height: 1.5;
+}
+.mo-br {
+    display: none;
+}
+.eduandskill {
+    display: flex;
+    justify-content: space-between;
+}
+.education, .skills {
+    width: 48%;
+    padding-top: 6rem;
+}
+.edu, .skill {
+    font-family: serif-r;
+    font-size: 3.5rem;
+    color: #5a1a1a;
+    text-align: left;
+    margin: 2rem 0;
+}
+.line2 {
+    border-bottom: 2px solid #822525;
+    padding: -10;
+    display: block;
+}
+.school, .academy {
+    font-family: pret-m;
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+    line-height: 1.5;
+    padding-top: 5%;
+}
+.schoolday, .acaday {
+    font-family: pret-m;
+    font-size: 21px;
+    color: #822525;
+    text-align: left;
+    line-height: 2;
+}
+.icon1, .icon2 {
+    width: 21%;
+    padding-top: 5%;
+}
+.skill-icon {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* 3페이지 - 전체 인덱스 페이지 */
+.index-page {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    display: flex;
+    flex-direction: column;
+}
+.index-heading {
+    font-family: pf-sb;
+    font-size: 8rem;
+    color: #822525;
+    justify-content: space-between;
+    padding: 5% 5%;
+}
+.index-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    flex: 1;
+}
+.index-card {
+    background-color: #fff;
+    max-width: 20%;
+    padding: 2.5%;
+    border-radius: 20px;
+    flex: 1;
+}
+.index-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(242,164,158,0.3);
+    cursor: url(../images/Select.cur) 2 2, auto;
+}
+.index-num {
+    text-align: right;
+    font-family: ws-b;
+    font-size: 1.2rem;
+    color: #000;
+    margin: 5% 5%;
+}
+.index-num:hover {
+    cursor: url(../images/Select.cur) 2 2, auto;
+}
+.index-project {
+    font-family: nns-r;
+    list-style: none;
+}
+.index-icon {
+    margin-bottom: 2%;
+}
+.index-card h3 {
+    font-family: ws-b;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 5%;
+    color: #000;
+}
+.index-card ul {
+    font-size: 1rem;
+    line-height: 2.2;
+    border-top: 1px solid ;
+    padding: 5%;
+}
+.index-divider {
+    font-size: 2rem;
+    font-weight: 700;
+    align-self: center;
+    flex-shrink: 0;
+    color: #822525;
+}
+
+
+/* 4페이지 - 에펙 인덱스 페이지 */
+.AEpage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #822525;
+    overflow: hidden;
+}
+.star1 {
+    position: absolute;
+    top: -100px;
+    right: 100px;
+    width: 20%;
+    transform: rotate(230deg);
+}
+.star2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100px;
+    width: 20%;
+}
+.star3 {
+    position: absolute;
+    bottom: -100px;
+    right: 100px;
+    width: 20%;
+    transform: rotate(135deg);
+}
+.content-wrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 80%;
+    max-width: 1000px;
+    margin-left: 10%;
+}
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.chapter-badge {
+    border: 1px solid #822525;
+    border-radius: 30px;
+    padding: 6px 18px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.main-title {
+    font-family: pf-sb;
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+.divider {
+    width: 1px;
+    height: 140px;
+    background-color: #7a2b2b;
+    opacity: 0.5;
+    margin-top: 50px;
+}
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+    color: #333;
+}
+.project-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+.proj-num {
+    font-weight: 800;
+    width: 120px;
+}
+.proj-name {
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+
+/* 5페이지 - 에펙 : 키네틱 타이포 그래피 */
+.AETypo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    color: #822525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-right-info {
+    font-family: ws-r;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.main-wrapper {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.badge {
+    border: 1px solid #7a2b2b;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.title {
+    font-family: serif-r;
+    font-size: 5.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.content-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.content-section iframe {
+    flex: 0 0 60%;
+    aspect-ratio: 16 / 9;
+}
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-top: 10px;
+}
+.description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.info-table {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #822525;
+}
+.info-row {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #822525;
+    font-size: 1.15rem;
+}
+.info-label {
+    font-family: ws-r;
+    width: 120px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.info-divider {
+    margin: 0 20px 0 0;
+    opacity: 0.3;
+    font-weight: 1300;
+    color: #822525;
+}
+.info-value {
+    font-family: nns-r;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+
+/* 6페이지 - 에펙 : 모션 그래픽 */
+.AEMotion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    color: #822525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-right-info {
+    font-family: ws-r;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.main-wrapper {
+    width: 85%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.badge {
+    border: 1px solid #7a2b2b;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.title {
+    font-family: serif-r;
+    font-size: 5.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.content-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.content-section iframe {
+    flex: 0 0 60%;
+    aspect-ratio: 16 / 9;
+}
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-top: 10px;
+}
+.description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.info-table {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #822525;
+}
+.info-row {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #822525;
+    font-size: 1.15rem;
+}
+.info-label {
+    font-family: ws-r;
+    width: 120px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.info-divider {
+    margin: 0 20px 0 0;
+    opacity: 0.3;
+    font-weight: 1300;
+    color: #822525;
+}
+.info-value {
+    font-family: nns-r;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+
+/* 7페이지 - 프리미어 인덱스 페이지 */
+.PRpage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #822525;
+    overflow: hidden;
+}
+.content-wrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 80%;
+    max-width: 1000px;
+    margin-left: 10%;
+}
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.chapter-badge {
+    border: 1px solid #822525;
+    border-radius: 30px;
+    padding: 6px 18px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.main-title {
+    font-family: pf-sb;
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+.divider {
+    width: 1px;
+    height: 140px;
+    background-color: #7a2b2b;
+    opacity: 0.5;
+    margin-top: 50px;
+}
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+    color: #333;
+}
+.project-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+.proj-num {
+    font-weight: 800;
+    width: 120px;
+}
+.proj-name {
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+
+/* 8페이지 - 프프 : 컷 편집 */
+.PRCut {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    color: #822525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-right-info {
+    font-family: ws-r;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.main-wrapper {
+    width: 85%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.badge {
+    border: 1px solid #7a2b2b;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.title {
+    font-family: serif-r;
+    font-size: 5.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.content-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.content-section iframe {
+    flex: 0 0 60%;
+    aspect-ratio: 16 / 9;
+}
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-top: 10px;
+}
+.description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.info-table {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #822525;
+}
+.info-row {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #822525;
+    font-size: 1.15rem;
+}
+.info-label {
+    font-family: ws-r;
+    width: 120px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.info-divider {
+    margin: 0 20px 0 0;
+    opacity: 0.3;
+    font-weight: 1300;
+    color: #822525;
+}
+.info-value {
+    font-family: nns-r;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+
+/* 9페이지 - 프프 : 비디오 이펙트 */
+.PRvideo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    color: #822525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-right-info {
+    font-family: ws-r;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.main-wrapper {
+    width: 85%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.badge {
+    border: 1px solid #7a2b2b;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.title {
+    font-family: serif-r;
+    font-size: 5.5rem;
+    font-weight: 600;
+    letter-spacing: 10em;
+}
+.content-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.content-section iframe {
+    flex: 0 0 60%;
+    aspect-ratio: 16 / 9;
+}
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-top: 10px;
+}
+.description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.info-table {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #822525;
+}
+.info-row {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #822525;
+    font-size: 1.15rem;
+}
+.info-label {
+    font-family: ws-r;
+    width: 120px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.info-divider {
+    margin: 0 20px 0 0;
+    opacity: 0.3;
+    font-weight: 1300;
+    color: #822525;
+}
+.info-value {
+    font-family: nns-r;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+
+/* 10페이지 - WEB 인덱스 페이지 */
+.WEBpage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #822525;
+    overflow: hidden;
+}
+.content-wrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 80%;
+    max-width: 1000px;
+    margin-left: 10%;
+}
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.chapter-badge {
+    border: 1px solid #822525;
+    border-radius: 30px;
+    padding: 6px 18px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.main-title {
+    font-family: pf-sb;
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+.divider {
+    width: 1px;
+    height: 140px;
+    background-color: #7a2b2b;
+    opacity: 0.5;
+    margin-top: 50px;
+}
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+    color: #333;
+}
+.project-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: #333;
+}
+.proj-num {
+    font-weight: 800;
+    width: 120px;
+}
+.proj-name {
+    font-weight: 400;
+    opacity: 0.85;
+}
+
+
+/* 11페이지 - WEB : 이미지 태그 */
+.WEBimg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    color: #822525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-right-info {
+    font-family: ws-r;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.main-wrapper {
+    width: 85%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.badge {
+    border: 1px solid #7a2b2b;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.title {
+    font-family: serif-r;
+    font-size: 5.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.content-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.content-section iframe {
+    flex: 0 0 60%;
+    aspect-ratio: 16 / 9;
+}
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-top: 10px;
+}
+.description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.info-table {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #822525;
+}
+.info-row {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #822525;
+    font-size: 1.15rem;
+}
+.info-label {
+    font-family: ws-r;
+    width: 120px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.info-divider {
+    margin: 0 20px 0 0;
+    opacity: 0.3;
+    font-weight: 1300;
+    color: #822525;
+}
+.info-value {
+    font-family: nns-r;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+
+/* 12페이지 - WEB : 오디오, 비디오 태그 */
+.WEBimg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    color: #822525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-right-info {
+    font-family: ws-r;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.main-wrapper {
+    width: 85%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.badge {
+    border: 1px solid #7a2b2b;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.title {
+    font-family: serif-r;
+    font-size: 5.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.content-section {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.content-section iframe {
+    flex: 0 0 60%;
+    aspect-ratio: 16 / 9;
+}
+.info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-top: 10px;
+}
+.description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.info-table {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #822525;
+}
+.info-row {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #822525;
+    font-size: 1.15rem;
+}
+.info-label {
+    font-family: ws-r;
+    width: 120px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.info-divider {
+    margin: 0 20px 0 0;
+    opacity: 0.3;
+    font-weight: 1300;
+    color: #822525;
+}
+.info-value {
+    font-family: nns-r;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+
+/* 13페이지 - 감사합니다 */
+.outro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.top-section {
+    flex: 7;
+    background: linear-gradient(#d8c6c2,#e8a8a0,#e89090,#d47878);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.thank-you-text {
+    font-family: poppi-b;
+    font-size: 6rem;
+    font-weight: 900;
+    color: #822525;
+    letter-spacing: 2px;
+}
+.subtitle {
+    font-family: pret-sb;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #822525;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.bottom-section {
+    flex: 3;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.footer-left h2, .footer-right h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #6e6e73;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+.footer-left p, .footer-right p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+.footer-right h2, .footer-right p {
+    text-align: right;
+}

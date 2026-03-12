@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+@media (max-width: 768px) {
+    
+    /* 공통 영역 */
+    html, body {
+        height: auto;
+    }
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+    .intro, .AETypo, .AEMotion, .PRCut, .PRvideo, .Webimg {
+        height: 100%;
+        min-height: 100%;
+        padding: 10% 10%;
+    }
+
+
+    /* 1페이지 - 메인배너 및 인트로 */
+    .main h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+        letter-spacing: 0.3rem;
+    }
+    .mainbanner .maintext:first-child { 
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 2rem 1rem 0; 
+        gap: 0%;
+    }
+    .LJA1 {
+        font-size: 1rem;
+        text-align: left;
+        padding-top: 0%;
+    }
+    .grow {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        margin: 0;
+    }
+    .mainbanner > .maintext:last-child {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+    .warm { 
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .born, .me1 {
+        display: none
+    }
+
+
+    /* --- 2페이지 : 내 소개 --- */
+    .intro {
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+    }
+    .intro-left, .intro-right {
+        width: 100%;
+        text-align: center;
+    }
+    .me2 {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 1rem;
+    }
+    .info-group { 
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        margin: 0 auto; 
+        width: fit-content; 
+    }
+    .info-group li { 
+        font-size: 1.1rem;
+        text-align: left;
+        line-height: 2;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        word-break: break-all;
+    }
+    .label { 
+        width: 70px;
+        flex-shrink: 0;
+        margin-right: 10px;
+    }
+    .LJA2 {
+        font-size: 2.5rem;
+        letter-spacing: 0;
+        margin-bottom: 0.5rem;
+    }
+    .daily {
+        display: none;
+    }
+    .mo-br {
+        display: block;
+    }
+    .challenge {
+        text-align: center;
+        font-size: 1.2rem;
+        word-break: keep-all;
+        line-height: 1.6;
+        text-align: center;
+        display: none;
+    }
+    .eduandskill {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .education, .skills {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0 auto;
+    }
+    .edu, .skill {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .line2 {
+        width: 90%;
+        margin: 5%;
+        border-bottom: 2px solid #822525;
+    }
+    .school, .academy {
+        text-align: center;
+        font-size: 1rem;
+        word-break: keep-all;
+        padding: 0 10px;
+    }
+    .schoolday, .acaday {
+        text-align: center;
+        font-size: 0.9rem;
+        word-break: keep-all;
+        padding: 0 10px;
+    }
+    .skill-icon {
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .icon1, .icon2 {
+        width: 55px;
+        height: 55px;
+        padding-top: 0;
+        align-items: center;
+        object-fit: contain;
+        margin: 0 auto; 
+    }
+
+    /* --- 3페이지 : 전체 인덱스 페이지 --- */
+    .index-page {
+        height: auto;
+        min-height: 100vh;
+        justify-content: flex-start;
+        padding: 10% 10%;
+    }
+    .index-heading { 
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .index-grid { 
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 1rem;
+    }
+    .index-card { 
+        max-width: 85%;
+        width: 90%;
+        flex: none;
+        padding: 5%
+    }
+
+    .index-card h3 {
+        padding-top: 0%;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+    .index-project {
+        display: flex;
+    }
+    /* --- 각 챕터 인덱스 공통 --- */
+    .content-wrapper { 
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+        gap: 30px;
+    }
+    .left-section, .right-section {
+        align-items: center;
+        margin-top: 0;
+    }
+    .main-title {
+        font-size: 4rem;
+    }
+    .divider {
+        width: 100px;
+        height: 1px;
+        margin-top: 0;
+    }
+    .star1, .star2, .star3 { 
+        display: none;
+    }
+
+
+    /* --- 프로젝트 상세 페이지 공통 --- */
+    .top-right-info { 
+        position: relative;
+        top: 0; right: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+        display: none;
+    }
+    .main-wrapper { 
+        width: 90%;
+        margin: 0 auto; 
+        gap: 20px;
+    }
+    .title-section {
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin-bottom: 1rem;
+    }
+    .title { 
+        font-size: 2.5rem;
+        letter-spacing: 0
+    }
+    .content-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .content-section iframe {
+        flex: 0 0 60%;
+        width: 100%;
+    }
+    .info-section {
+        width: 100%;
+        padding-top: 0;
+        gap: 30px;
+    }
+    .description { 
+        font-size: 1rem;
+        text-align: center;
+        display: none;
+    }
+    .info-label { 
+        width: 80px;
+        font-size: 1rem;
+    }
+    .info-value { 
+        font-size: 1rem;
+    }
+    .info-row {
+        justify-content: flex-start;
+    }
+
+    /* --- 아웃트로 페이지 --- */
+    .top-section {
+        padding: 4rem 1rem;
+    }
+    .thank-you-text {
+        font-size: 3.5rem;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    .subtitle {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .bottom-section {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-left {
+        margin-bottom: -10%;
+    }
+
+    .footer-left h2 {
+        font-size: 1.1rem;
+        color: #822525;
+    }
+    .footer-left p {
+        font-size: 1rem;
+        display: none;
+    }
+    .footer-right h2 {
+        padding: 0;
+        text-align: center;
+        font-size: 1.1rem;
+    }  
+    .footer-right p {
+        padding: 0;
+        text-align: center;
+        font-size: 1.15rem;
+    }
+}
