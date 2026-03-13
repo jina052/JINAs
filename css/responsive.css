@@ -10,7 +10,7 @@
         max-width: 100%;
         height: auto;
     }
-    .intro, .AETypo, .AEMotion, .PRCut, .PRvideo, .Webimg {
+    .intro, .AETypo, .AEMotion, .PRCut, .PRvideo, .WEBimg { /* Webimg 에서 수정 */
         height: 100%;
         min-height: 100%;
         padding: 10% 10%;
@@ -50,7 +50,7 @@
         text-align: center;
     }
     .born, .me1 {
-        display: none
+        display: none; /* 세미콜론 추가 */
     }
 
 
@@ -178,7 +178,7 @@
         max-width: 85%;
         width: 90%;
         flex: none;
-        padding: 5%
+        padding: 5%;
     }
 
     .index-card h3 {
@@ -235,7 +235,7 @@
     }
     .title { 
         font-size: 2.5rem;
-        letter-spacing: 0
+        letter-spacing: 0; /* 세미콜론 추가 */
     }
     .content-section {
         flex-direction: column;
